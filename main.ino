@@ -5,6 +5,21 @@
 #include <Arduino_JSON.h>
 #include <LiquidCrystal.h>
 
+/* The circuit:
+ * LCD RS pin to digital pin 13
+ * LCD Enable pin to digital pin 12
+ * LCD D4 pin to digital pin 26
+ * LCD D5 pin to digital pin 25
+ * LCD D6 pin to digital pin 33
+ * LCD D7 pin to digital pin 32
+ * LCD R/W pin to ground
+ * LCD VSS pin to ground
+ * LCD VCC pin to 5V
+ * LCD V0 pin to ground through 2kΩ resistor
+ * LCD anode to +5V through 330Ω resistor
+ * LCD kathode to ground
+*/
+
 // WiFi credentials
 const char* ssid = "ssid";
 const char* password = "password";
